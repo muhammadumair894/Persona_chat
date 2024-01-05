@@ -7,26 +7,26 @@ chatbot_url = "https://chat.dante-ai.com/embed?kb_id=d7780370-85f7-47b6-a131-fa8
 # Define the height of the iframe
 iframe_height = 500
 
-# Define the logo image
-logo_url = "leungloyung8.jpg"
-logo_width = 120
-logo_height = 40
+# # Define the logo image
+# logo_url = "leungloyung8.jpg"
+# logo_width = 120
+# logo_height = 40
 
 # Define the Streamlit app
 def app():
     # Set the app title
-    st.set_page_config(page_title="Chatbot App", page_icon=":robot_face:")
+    st.set_page_config(page_title="Persona Chatbot", page_icon=":robot_face:")
 
-    # Load the logo image and resize it to fit the specified dimensions
-    logo = Image.open(logo_url)
-    logo_aspect_ratio = logo.width / logo.height
-    logo = logo.resize((int(logo_height * logo_aspect_ratio), logo_height))
+    # # Load the logo image and resize it to fit the specified dimensions
+    # logo = Image.open(logo_url)
+    # logo_aspect_ratio = logo.width / logo.height
+    # logo = logo.resize((int(logo_height * logo_aspect_ratio), logo_height))
 
-    # Add the logo image
-    st.image(logo, width=logo_width)
+    # # Add the logo image
+    # st.image(logo, width=logo_width)
 
-    # Add a header
-    #st.header("Welcome to the Opexil AI!")
+    # # Add a header
+    # #st.header("Welcome to the Opexil AI!")
 
     # Define the iframe code as a string
     iframe_code = f'<iframe src="{chatbot_url}" width="125%" height="{iframe_height}" frameborder="0"></iframe>'
