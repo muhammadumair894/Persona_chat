@@ -26,7 +26,7 @@ def app():
     st.image(logo, width=logo_width)
 
     # Add a header
-    st.header("Welcome to the Opexil AI!")
+    #st.header("Welcome to the Opexil AI!")
 
     # Define the iframe code as a string
     iframe_code = f'<iframe src="{chatbot_url}" width="125%" height="{iframe_height}" frameborder="0"></iframe>'
